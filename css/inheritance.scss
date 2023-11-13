@@ -1,0 +1,37 @@
+:root{
+    --blue:#0b6f97;
+    --off-white:#fffaec;
+}
+  body{ 
+    background-color: var(--off-white);
+  }
+
+%message{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.success{
+    @extend %message;
+    background-color:#cfebcf;
+    color: #628b62;
+    border: #628b62 1px solid;
+}
+
+.warning{
+    @extend %message;
+    background-color:#fdebca;
+    color: #ad813d;
+    border: #ad813d 1px solid;
+}
+
+.error{
+    @extend %message;
+    background-color:#ffd9d9;
+    color: #a15858;
+    border: #a15858 1px solid;
+}
